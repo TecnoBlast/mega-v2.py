@@ -1,0 +1,36 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "mega-v2.py"
+version = "2.1.0"
+description = "A Python library for MEGA.nz."
+authors = [
+    {name = "TecnoBlast", email = "info@tcbl.dev"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+keywords = ["mega", "mega.nz", "api", "httpx", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "httpx>=0.20.0",
+    "pycryptodome>=3.15.0",
+    "tenacity>=8.0.0",
+]
+
+[project.urls]
+Home = "https://github.com/TecnoBlast/mega-v2.py"
+
+[tool.flit.module]
+name = "mega"
+
